@@ -118,7 +118,5 @@ searchIndex = None
 end2 = time.time()
 ```
 
-### Screenshots
+### Screenshot - Finding 10 search keys in 10 Million data set !
 ![Ten Million Data set](https://github.com/asirihewage/search-in-ten-million-data-set/blob/master/screenshots/10%20million%20data.png)
-![IDLE](https://github.com/asirihewage/search-in-ten-million-data-set/blob/master/screenshots/pythonIDLE.png)
-![CMD](https://github.com/asirihewage/search-in-ten-million-data-set/blob/master/screenshots/CMD.png)
