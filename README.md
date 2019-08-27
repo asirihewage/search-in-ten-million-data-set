@@ -69,6 +69,7 @@ Instead of comparing by value, the script will compare the byte value before ins
 ```
 
 ### Find data
+Find data with music. With music option 2 wins, without music option 1 wins. Change playmusic variable in Node.py before comparison. 
 ```Python
     def find(self, data):
         if(data == self.data):
