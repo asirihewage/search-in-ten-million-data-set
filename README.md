@@ -9,6 +9,7 @@ This python script will demonstrate how to use Binary Tree to perform searching 
 
 # implementation
 
+### Main.py
 ```Python
 #!/bin/python
 from Tree import Tree
@@ -45,6 +46,50 @@ with ShadyBar('Genarating search keys...', max=100) as bar:
         if counter2/searchKeySize*100 in range(0,100) :
             bar.next()   
 ```
+### Insert data
+Instead of comparing by value, the script will compare the byte value before insertion. It gives more flexibility when we insert both numbers and letters. Actualy any object :) No limitations!
+```Python
+    def insert(self, data):
+        if self.data == data or ' '.join(format(ord(x), 'b') for x in str(self.data)) == ' '.join(format(ord(x), 'b') for x in str(data)):
+            return False
+        
+        elif ' '.join(format(ord(x), 'b') for x in str(data)) < ' '.join(format(ord(x), 'b') for x in str(self.data)):
+            if self.smallByte:
+                return self.smallByte.insert(data)
+            else:
+                self.smallByte = Node(data)
+                return True
+
+        else:
+            if self.bigByte:
+                return self.bigByte.insert(data)
+            else:
+                self.bigByte = Node(data)
+                return True
+```
+
+### Find data
+```Python
+    def find(self, data):
+        if(data == self.data):
+            if sound :
+                playsound('src/click.mp3')
+            return True
+        elif(' '.join(format(ord(x), 'b') for x in str(data)) < ' '.join(format(ord(x), 'b') for x in str(self.data))):
+            if self.smallByte:
+                return self.smallByte.find(data)
+            else:
+                if sound :
+                    playsound('src/click4.mp3')
+                return False
+        else:
+            if self.bigByte:
+                return self.bigByte.find(data)
+            else:
+                if sound :
+                    playsound('src/click4.mp3')
+                return False
+```
 
 ## Search Option 1 using the tree
 
@@ -72,6 +117,7 @@ searchIndex = None
 end2 = time.time()
 ```
 
+### Screenshots
 ![Ten Million Data set](https://github.com/asirihewage/search-in-ten-million-data-set/blob/master/screenshots/10%20million%20data.png)
 ![IDLE](https://github.com/asirihewage/search-in-ten-million-data-set/blob/master/screenshots/pythonIDLE.png)
 ![CMD](https://github.com/asirihewage/search-in-ten-million-data-set/blob/master/screenshots/CMD.png)
