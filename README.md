@@ -3,13 +3,13 @@ This python script will demonstrate how to use Binary Tree to perform searching 
 
 # run in console
 
-'''
+'''Python
   >> python3 Main.py
 '''
 
 # implementation
 
-'''
+''' Python
 dataSet1 = []
 dataSet2 = []
 dataset1Size = 10000000
