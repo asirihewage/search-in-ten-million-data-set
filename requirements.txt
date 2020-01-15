@@ -40,7 +40,7 @@ kiwisolver==1.1.0
 lxml==4.3.4
 Mako==1.0.14
 MarkupSafe==1.1.1
-marshmallow==2.14.0
+marshmallow==2.15.1
 marshmallow-sqlalchemy==0.13.2
 MeaningCloud-python==1.1.1
 memory-profiler==0.55.0
