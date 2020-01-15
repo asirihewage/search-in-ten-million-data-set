@@ -47,7 +47,7 @@ memory-profiler==0.55.0
 midi2audio==0.1.1
 mido==1.2.9
 more-itertools==7.2.0
-nltk==3.4.3
+nltk==3.4.5
 numpy==1.16.4
 objgraph==3.4.1
 playsound==1.2.2
